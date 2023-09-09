@@ -4,7 +4,7 @@ import { Range } from 'react-date-range'
 import { useRouter } from 'next/navigation'
 import { Reservation } from '@prisma/client'
 
-import { SafeListing, SafeUser, safeReservations } from '@/app/types'
+import { SafeListing, SafeUser, SafeReservations } from '@/app/types'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { categories } from '@/app/components/Header/Categories'
 import Container from '@/app/components/Container'
@@ -23,7 +23,7 @@ const initialDataRange = {
 }
 
 interface ListingClientProps {
-  reservations?: safeReservations[]
+  reservations?: SafeReservations[]
   listing: SafeListing & {
     user: SafeUser
   }
