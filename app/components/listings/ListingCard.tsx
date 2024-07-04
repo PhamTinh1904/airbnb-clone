@@ -29,6 +29,8 @@ const ListingCard: React.FC<ListingCardProps> = ({
   actionId = '',
   currentUser,
 }) => {
+  console.log(`Link anh: ${data.imageSrc}`);
+  
   const router = useRouter()
   const { getByValue } = useContries()
   const location = getByValue(data.locationValue)
